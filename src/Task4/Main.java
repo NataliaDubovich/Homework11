@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         long a = 25214903917L;
         long c = 11;
-        long m = 2 ^ 48;
+        long m = (long) Math.pow(2, 48);
         long seed = System.currentTimeMillis() % m;
         Stream<Long> randomNumbers = linearCongruentialGenerator(seed, a, c, m);//безкінечний стрім
         //перших 10 випадкових чисел зі стріму

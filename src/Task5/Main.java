@@ -1,11 +1,11 @@
 package Task5;
 
 
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-import java.util.Spliterator;
-import java.util.Spliterators;
 
 public class Main {
 
@@ -13,29 +13,16 @@ public class Main {
         Iterator<T> firstIterator = first.iterator();
         Iterator<T> secondIterator = second.iterator();
 
-        Iterator<T> zippedIterator = new Iterator<>() {
-            private boolean isFirst = true;
-
-            @Override
-            public boolean hasNext() {
-                return firstIterator.hasNext() && secondIterator.hasNext();
-            }
-
-            @Override
-            public T next() {
-                T nextElement;
-                if (isFirst) {
-                    nextElement = firstIterator.next();
-                } else {
-                    nextElement = secondIterator.next();
-                }
-                isFirst = !isFirst;
-                return nextElement;
-            }
-        };
-
-        Spliterator<T> spliterator = Spliterators.spliteratorUnknownSize(zippedIterator, Spliterator.ORDERED);
-        return StreamSupport.stream(spliterator, false);
+        return Stream.generate(() -> {
+                    if
+                    (firstIterator.hasNext() && secondIterator.hasNext()) {
+                        return Arrays.asList(firstIterator.next(), secondIterator.next());
+                    } else {
+                        return null;
+                    }
+                })
+                .takeWhile(Objects::nonNull)
+                .flatMap(List::stream);
     }
 
     public static void main(String[] args) {

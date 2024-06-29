@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715f277b-c438-4f5b-aaf1-c18e87d846c0" name="Changes" comment="Commit1" />
+    <list default="true" id="715f277b-c438-4f5b-aaf1-c18e87d846c0" name="Changes" comment="Commit1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task5/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Task1.Main.executor": "Run",
-    "Application.Task2.Main.executor": "Run",
-    "Application.Task3.Main.executor": "Run",
-    "Application.Task4.Main.executor": "Run",
-    "Application.Task5.Main.executor": "Run",
-    "Application.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Task1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Task2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Task3.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Task4.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Task5.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\Homework11\src\Task1" />
@@ -118,8 +122,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Task5.Main" />
-        <item itemvalue="Application.Task3.Main" />
         <item itemvalue="Application.Task4.Main" />
+        <item itemvalue="Application.Task3.Main" />
         <item itemvalue="Application.Task2.Main" />
         <item itemvalue="Application.Task1.Main" />
       </list>
@@ -142,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719237488289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit1">
+      <option name="closed" value="true" />
+      <created>1719237538732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719237538732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
