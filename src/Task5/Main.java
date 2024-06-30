@@ -1,28 +1,16 @@
 package Task5;
 
-
-import java.util.Arrays;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Objects;
 import java.util.stream.Stream;
 
 public class Main {
 
     public static <T> Stream<T> zip(Stream<T> first, Stream<T> second) {
-        Iterator<T> firstIterator = first.iterator();
         Iterator<T> secondIterator = second.iterator();
 
-        return Stream.generate(() -> {
-                    if
-                    (firstIterator.hasNext() && secondIterator.hasNext()) {
-                        return Arrays.asList(firstIterator.next(), secondIterator.next());
-                    } else {
-                        return null;
-                    }
-                })
-                .takeWhile(Objects::nonNull)
-                .flatMap(List::stream);
+        return first
+                .filter(ignore -> secondIterator.hasNext())
+                .flatMap(item -> Stream.of(item, secondIterator.next()));
     }
 
     public static void main(String[] args) {
